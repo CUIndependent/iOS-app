@@ -1,5 +1,5 @@
 # CUI
-The iOS app for the CU Independent newspaper (<a href='http://www.cuindependent.com'>cuindependent.com</a>)
+The iOS app for the <a href='http://www.cuindependent.com'>CU Independent newspaper</a>
 
 ## Feature List
 - Feed of stories
