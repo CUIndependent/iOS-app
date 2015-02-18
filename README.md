@@ -1,6 +1,10 @@
 # CUI
 The iOS app for the <a href='http://www.cuindependent.com'>CU Independent newspaper</a>
 
+## Authors
+- Kylie Dale
+- Michael Guida
+
 ## Feature List
 - Feed of stories
 - Search by
@@ -34,4 +38,4 @@ The iOS app for the <a href='http://www.cuindependent.com'>CU Independent newspa
 - Analytics of users
 - Deals sections for business to offer deals to students through the app
 - Grades Database
-- Swip between stories
+- Swipe between stories
