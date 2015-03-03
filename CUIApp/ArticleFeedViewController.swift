@@ -23,6 +23,8 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "CU Independent"
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -46,7 +48,7 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
         let row = indexPath.row
         
         // Setting the cells text to the corresponding data
-        cell.textLabel.text = tableData[row]
+        cell.textLabel?.text = tableData[row]
         
         return cell
     }
