@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C2B452F1A925DEB00158262 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B452E1A925DEB00158262 /* AppDelegate.swift */; };
 		4C2B45321A925DEB00158262 /* CUIApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45301A925DEB00158262 /* CUIApp.xcdatamodeld */; };
-		4C2B45341A925DEB00158262 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45331A925DEB00158262 /* ViewController.swift */; };
+		4C2B45341A925DEB00158262 /* ArticleFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45331A925DEB00158262 /* ArticleFeedViewController.swift */; };
 		4C2B45371A925DEB00158262 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B45351A925DEB00158262 /* Main.storyboard */; };
 		4C2B45391A925DEB00158262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B45381A925DEB00158262 /* Images.xcassets */; };
 		4C2B453C1A925DEB00158262 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B453A1A925DEB00158262 /* LaunchScreen.xib */; };
@@ -31,7 +31,7 @@
 		4C2B452D1A925DEB00158262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2B452E1A925DEB00158262 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C2B45311A925DEB00158262 /* CUIApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CUIApp.xcdatamodel; sourceTree = "<group>"; };
-		4C2B45331A925DEB00158262 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C2B45331A925DEB00158262 /* ArticleFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFeedViewController.swift; sourceTree = "<group>"; };
 		4C2B45361A925DEB00158262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C2B45381A925DEB00158262 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C2B453B1A925DEB00158262 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4C2B452E1A925DEB00158262 /* AppDelegate.swift */,
-				4C2B45331A925DEB00158262 /* ViewController.swift */,
+				4C2B45331A925DEB00158262 /* ArticleFeedViewController.swift */,
 				4C2B45351A925DEB00158262 /* Main.storyboard */,
 				4C2B45381A925DEB00158262 /* Images.xcassets */,
 				4C2B453A1A925DEB00158262 /* LaunchScreen.xib */,
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2B45341A925DEB00158262 /* ViewController.swift in Sources */,
+				4C2B45341A925DEB00158262 /* ArticleFeedViewController.swift in Sources */,
 				4C2B452F1A925DEB00158262 /* AppDelegate.swift in Sources */,
 				4C2B45321A925DEB00158262 /* CUIApp.xcdatamodeld in Sources */,
 			);
@@ -409,6 +409,7 @@
 				4C2B454D1A925DEB00158262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C2B454E1A925DEB00158262 /* Build configuration list for PBXNativeTarget "CUIAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				4C2B45501A925DEB00158262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

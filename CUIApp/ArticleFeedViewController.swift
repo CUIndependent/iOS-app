@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ArticleFeedViewController.swift
 //  CUIApp
 //
 //  Created by Michael on 2/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Data to populate table with
     let tableData = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
