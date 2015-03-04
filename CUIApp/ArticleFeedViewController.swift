@@ -11,7 +11,9 @@ import UIKit
 class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Data to populate table with
-    let tableData = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+    //let tableData = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",
+    //    "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen"]
+    var tableData = [Article]()
     
     // Identifier to use for the text cell in the tableview. This should be updated if the tableview text
     // cell identifier is updated.
@@ -27,6 +29,14 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        if (tableData.count > 0) {
+            return
+        } else {
+            tableData.append(Article(title: "Buffs win basketball game", subtitle: "Record is now 12-14 for the season"))
+            tableData.append(Article(title: "Buzz Aldrin talks at CU", subtitle: "Event held at Macky"))
+            tableData.append(Article(title: "Title", subtitle: "Subtitle"))
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,7 +58,7 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
         let row = indexPath.row
         
         // Setting the cells text to the corresponding data
-        cell.textLabel?.text = tableData[row]
+        cell.textLabel.text = tableData[row].title
         
         return cell
     }
