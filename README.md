@@ -1,9 +1,16 @@
-# CUI
+# CU Independent App
 The iOS app for the <a href='http://www.cuindependent.com'>CU Independent newspaper</a>
 
 ## Authors
-- Kylie Dale
-- Michael Guida
+- Kylie Dale (kylie.dale@colorado.edu)
+- Michael Guida (michael.guida@colorado.edu)
+
+## TODO
+
+- Finish basic storyboard for all screens
+- Layout custom cells for the feed
+- pull in data from cuindependent.com to get articles
+- pull in data from https://github.com/mguida22/cu-poi for the campus map
 
 ## Feature List
 - Feed of stories
