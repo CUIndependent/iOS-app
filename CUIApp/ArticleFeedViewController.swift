@@ -30,9 +30,9 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
         if (tableData.count > 0) {
             return
         } else {
-            tableData.append(Article(title: "Buffs win basketball game", subtitle: "Record is now 12-14 for the season"))
-            tableData.append(Article(title: "Buzz Aldrin talks at CU", subtitle: "Event held at Macky"))
-            tableData.append(Article(title: "Title", subtitle: "Subtitle"))
+            tableData.append(Article(title: "Buffs win basketball game", subtitle: "Record is now 12-14 for the season", time: "9:08 pm"))
+            tableData.append(Article(title: "Buzz Aldrin talks at CU", subtitle: "Event held at Macky", time: "3:28 pm"))
+            tableData.append(Article(title: "Title", subtitle: "Subtitle", time: "1:59 pm"))
         }
     }
 
@@ -56,6 +56,7 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
         
         // Setting the cells text to the corresponding data
         cell.textLabel.text = tableData[row].title
+        cell.detailTextLabel?.text = tableData[row].time
         
         return cell
     }
