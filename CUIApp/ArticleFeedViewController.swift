@@ -10,9 +10,6 @@ import UIKit
 
 class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    // Data to populate table with
-    //let tableData = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven",
-    //    "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen"]
     var tableData = [Article]()
     
     // Identifier to use for the text cell in the tableview. This should be updated if the tableview text

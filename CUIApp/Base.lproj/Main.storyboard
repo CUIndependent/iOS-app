@@ -32,7 +32,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-na-D7g">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wLS-na-D7g">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -56,12 +56,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wLS-na-D7g" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-64" id="0PM-cb-31I"/>
-                            <constraint firstAttribute="centerY" secondItem="wLS-na-D7g" secondAttribute="centerY" id="2Yd-M0-peF"/>
-                            <constraint firstItem="wLS-na-D7g" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="FTj-5e-ggY"/>
-                            <constraint firstItem="wLS-na-D7g" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="K9n-md-PCc"/>
                             <constraint firstAttribute="centerX" secondItem="wLS-na-D7g" secondAttribute="centerX" id="LxG-i1-F9F"/>
                             <constraint firstItem="wLS-na-D7g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Tqw-cG-rmr"/>
-                            <constraint firstItem="wLS-na-D7g" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="Wqu-yX-D4M"/>
                             <constraint firstAttribute="trailing" secondItem="wLS-na-D7g" secondAttribute="trailing" id="nNh-VA-53w"/>
                         </constraints>
                     </view>
