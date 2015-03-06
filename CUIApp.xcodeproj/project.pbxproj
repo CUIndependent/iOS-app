@@ -14,6 +14,7 @@
 		4C2B45391A925DEB00158262 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B45381A925DEB00158262 /* Images.xcassets */; };
 		4C2B453C1A925DEB00158262 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B453A1A925DEB00158262 /* LaunchScreen.xib */; };
 		4C2B45481A925DEB00158262 /* CUIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45471A925DEB00158262 /* CUIAppTests.swift */; };
+		4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */; };
 		4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD32DA1AA6DE8000DC574D /* Article.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		4C2B45411A925DEB00158262 /* CUIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2B45461A925DEB00158262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2B45471A925DEB00158262 /* CUIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUIAppTests.swift; sourceTree = "<group>"; };
+		4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4CCD32DA1AA6DE8000DC574D /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				4C2B45301A925DEB00158262 /* CUIApp.xcdatamodeld */,
 				4C2B452C1A925DEB00158262 /* Supporting Files */,
 				4CCD32DA1AA6DE8000DC574D /* Article.swift */,
+				4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */,
 			);
 			path = CUIApp;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */,
+				4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */,
 				4C2B45341A925DEB00158262 /* ArticleFeedViewController.swift in Sources */,
 				4C2B452F1A925DEB00158262 /* AppDelegate.swift in Sources */,
 				4C2B45321A925DEB00158262 /* CUIApp.xcdatamodeld in Sources */,

@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableData = [Article]()
     
     // Identifier to use for the text cell in the tableview. This should be updated if the tableview text
     // cell identifier is updated.
-    let textCellIdentifier = "TextCell"
-
+    let cellIdentifier = "Cell"
+    
     // TableView on the main screen
     @IBOutlet weak var tableView: UITableView!
     
@@ -48,15 +48,19 @@ class ArticleFeedViewController: UIViewController, UITableViewDataSource, UITabl
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+        return customCellAtIndexPath(indexPath)
+    }
+    
+    func customCellAtIndexPath(indexPath:NSIndexPath) -> CustomTableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as CustomTableViewCell
         
         let row = indexPath.row
         
-        // Setting the cells text to the corresponding data
-        cell.textLabel.text = tableData[row].title
-        cell.detailTextLabel?.text = tableData[row].time
+        cell.articleTitleLabel?.text = tableData[row].title
+        cell.articleSubtitleLabel?.text = tableData[row].subtitle
+        cell.articleDateLabel?.text = tableData[row].time
         
         return cell
     }
