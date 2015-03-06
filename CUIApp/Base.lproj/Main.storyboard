@@ -42,33 +42,43 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DXD-T4-1k8" id="OxD-wP-3LP">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-Wi-zzI">
-                                                    <rect key="frame" x="8" y="0.0" width="528" height="45"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnE-Jw-nzQ">
-                                                    <rect key="frame" x="544" y="0.0" width="48" height="19"/>
+                                                    <rect key="frame" x="544" y="0.0" width="48" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="48" id="6UH-lw-3wQ"/>
+                                                        <constraint firstAttribute="width" constant="48" id="5Re-rI-W9C"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ngp-Wp-7xB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="Vc8-Mw-beb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4g-Wi-zzI">
+                                                    <rect key="frame" x="88" y="-4" width="421" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="FnE-Jw-nzQ" secondAttribute="bottom" constant="32.5" id="QcW-1M-0cA"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="T4g-Wi-zzI" secondAttribute="bottom" constant="6.5" id="kiT-h1-ps2"/>
-                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="leading" secondItem="T4g-Wi-zzI" secondAttribute="trailing" constant="8" symbolic="YES" id="lOV-Gh-YbV"/>
-                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="top" secondItem="OxD-wP-3LP" secondAttribute="top" id="lda-Zo-DR1"/>
-                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="trailing" secondItem="OxD-wP-3LP" secondAttribute="trailingMargin" id="oTC-6f-a6k"/>
-                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="top" secondItem="T4g-Wi-zzI" secondAttribute="top" id="sZl-8r-EnE"/>
-                                                <constraint firstItem="T4g-Wi-zzI" firstAttribute="leading" secondItem="OxD-wP-3LP" secondAttribute="leadingMargin" id="zFd-68-ijd"/>
+                                                <constraint firstItem="Ngp-Wp-7xB" firstAttribute="top" secondItem="FnE-Jw-nzQ" secondAttribute="top" id="3dj-Jm-Uew"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="FnE-Jw-nzQ" secondAttribute="bottom" constant="31.5" id="7h5-R9-y01"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="T4g-Wi-zzI" secondAttribute="bottom" constant="-9.5" id="Fjz-lZ-21w"/>
+                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="trailing" secondItem="OxD-wP-3LP" secondAttribute="trailingMargin" id="HEl-Vu-4Jt"/>
+                                                <constraint firstItem="Ngp-Wp-7xB" firstAttribute="leading" secondItem="OxD-wP-3LP" secondAttribute="leading" id="TSW-VO-s0m"/>
+                                                <constraint firstItem="T4g-Wi-zzI" firstAttribute="top" secondItem="OxD-wP-3LP" secondAttribute="topMargin" constant="-12" id="U5v-me-1nl"/>
+                                                <constraint firstItem="T4g-Wi-zzI" firstAttribute="leading" secondItem="Ngp-Wp-7xB" secondAttribute="trailing" constant="8" symbolic="YES" id="UWo-uU-huu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ngp-Wp-7xB" secondAttribute="bottom" constant="-8.5" id="Yqc-SW-X11"/>
+                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="top" secondItem="OxD-wP-3LP" secondAttribute="top" id="dDo-c0-qBJ"/>
+                                                <constraint firstItem="FnE-Jw-nzQ" firstAttribute="leading" secondItem="T4g-Wi-zzI" secondAttribute="trailing" constant="35" id="vIa-BR-yUf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleDateLabel" destination="FnE-Jw-nzQ" id="bHe-RH-0r6"/>
+                                            <outlet property="articleImageView" destination="Ngp-Wp-7xB" id="yEs-EA-cDo"/>
                                             <outlet property="articleTitleLabel" destination="T4g-Wi-zzI" id="pmf-C4-c5T"/>
                                         </connections>
                                     </tableViewCell>

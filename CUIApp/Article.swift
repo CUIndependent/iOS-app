@@ -11,9 +11,11 @@ import UIKit
 class Article: NSObject {
     var title: String
     var time: String
+    var image: UIImage
     
-    init(title: String, time: String) {
+    init(title: String, time: String, image: UIImage) {
         self.title = title
         self.time = time
+        self.image = image
     }
 }

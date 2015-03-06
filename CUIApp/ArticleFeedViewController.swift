@@ -30,9 +30,9 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         if (tableData.count > 0) {
             return
         } else {
-            tableData.append(Article(title: "Buffs win basketball game", time: "9:08 pm"))
-            tableData.append(Article(title: "Buzz Aldrin talks at CU", time: "3:28 pm"))
-            tableData.append(Article(title: "Title", time: "1:59 pm"))
+            tableData.append(Article(title: "Buffs win basketball game", time: "9:08 pm", image: UIImage(named: ("basketball1"))!))
+            tableData.append(Article(title: "Buzz Aldrin talks at CU", time: "3:28 pm", image: UIImage(named: ("basketball2"))!))
+            tableData.append(Article(title: "Title", time: "1:59 pm", image: UIImage(named: ("placeholder"))!))
         }
     }
 
@@ -60,6 +60,7 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         
         cell.articleTitleLabel?.text = tableData[row].title
         cell.articleDateLabel?.text = tableData[row].time
+        cell.articleImageView?.image = tableData[row].image
         
         return cell
     }
