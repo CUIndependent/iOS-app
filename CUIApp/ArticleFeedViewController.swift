@@ -30,9 +30,9 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         if (tableData.count > 0) {
             return
         } else {
-            tableData.append(Article(title: "Buffs win basketball game", subtitle: "Record is now 12-14 for the season", time: "9:08 pm"))
-            tableData.append(Article(title: "Buzz Aldrin talks at CU", subtitle: "Event held at Macky", time: "3:28 pm"))
-            tableData.append(Article(title: "Title", subtitle: "Subtitle", time: "1:59 pm"))
+            tableData.append(Article(title: "Buffs win basketball game", time: "9:08 pm"))
+            tableData.append(Article(title: "Buzz Aldrin talks at CU", time: "3:28 pm"))
+            tableData.append(Article(title: "Title", time: "1:59 pm"))
         }
     }
 
@@ -59,7 +59,6 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         let row = indexPath.row
         
         cell.articleTitleLabel?.text = tableData[row].title
-        cell.articleSubtitleLabel?.text = tableData[row].subtitle
         cell.articleDateLabel?.text = tableData[row].time
         
         return cell

@@ -13,7 +13,6 @@ class CustomTableViewCell: UITableViewCell {
     // Custom cell object labels
     @IBOutlet weak var articleTitleLabel: UILabel!
     @IBOutlet weak var articleDateLabel: UILabel!
-    @IBOutlet weak var articleSubtitleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
