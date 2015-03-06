@@ -30,9 +30,15 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         if (tableData.count > 0) {
             return
         } else {
-            tableData.append(Article(title: "Buffs win basketball game", time: "9:08 pm", image: UIImage(named: ("basketball1"))!))
-            tableData.append(Article(title: "Buzz Aldrin talks at CU", time: "3:28 pm", image: UIImage(named: ("basketball2"))!))
-            tableData.append(Article(title: "Title", time: "1:59 pm", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "Buffs dominate Huskies, win in 64-47", time: "9:08 pm", image: UIImage(named: ("basketball1"))!))
+            tableData.append(Article(title: "Women’s basketball advances in Pac-12 Tourney with win over USC", time: "3:28 pm", image: UIImage(named: ("basketball2"))!))
+            tableData.append(Article(title: "Dear Domna: Technology has your whole relationship in its hands", time: "1:59 pm", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "Jared to the Left: Netanyahu hits a new low in Washington, D.C.", time: "1:02 pm", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "The CUI interviews Nick Frost", time: "11:47 am", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "Keg Tap: Previewing the Pac-12 Tournaments", time: "11:33 am", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "CUI Sports Interview Series: New York Times Writer John Branch", time: "11:03 am", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "Buzz Aldrin and his vision for the future", time: "10:24 am", image: UIImage(named: ("placeholder"))!))
+            tableData.append(Article(title: "The Schanfar Side: A little bit salty", time: "9:08 am", image: UIImage(named: ("placeholder"))!))
         }
     }
 
