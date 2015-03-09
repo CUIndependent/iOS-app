@@ -8,7 +8,6 @@ The iOS app for the <a href='http://www.cuindependent.com'>CU Independent newspa
 ## TODO
 
 - Finish basic storyboard for all screens
-- Layout custom cells for the feed
 - pull in data from http://cuindependent.com to get articles
 - pull in data from https://github.com/mguida22/cu-poi for the campus map
 
