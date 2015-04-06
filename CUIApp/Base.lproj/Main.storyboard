@@ -97,9 +97,7 @@
                             <constraint firstAttribute="trailing" secondItem="wLS-na-D7g" secondAttribute="trailing" id="nNh-VA-53w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Rze-R9-Me9">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="vfu-0R-KZJ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="Rze-R9-Me9"/>
                     <connections>
                         <outlet property="tableView" destination="wLS-na-D7g" id="cob-zK-kmD"/>
                     </connections>
@@ -108,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="233"/>
         </scene>
-        <!--View Controller-->
+        <!--Article View Controller-->
         <scene sceneID="rsX-g7-JK5">
             <objects>
-                <viewController id="72j-Po-g5b" sceneMemberID="viewController">
+                <viewController id="72j-Po-g5b" customClass="ArticleViewController" customModule="CUIApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ki5-CG-9iU"/>
                         <viewControllerLayoutGuide type="bottom" id="9XW-a3-BTv"/>

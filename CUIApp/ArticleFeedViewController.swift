@@ -23,6 +23,10 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
         navigationItem.title = "CU Independent"
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        navigationItem.title = "Feed"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

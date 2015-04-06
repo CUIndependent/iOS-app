@@ -86,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				4C2B452E1A925DEB00158262 /* AppDelegate.swift */,
+				61F2B6151AD2097B0086C51B /* ArticleViewController.swift */,
 				4C2B45331A925DEB00158262 /* ArticleFeedViewController.swift */,
 				4C2B45351A925DEB00158262 /* Main.storyboard */,
 				4C2B45381A925DEB00158262 /* Images.xcassets */,
@@ -93,7 +94,6 @@
 				4C2B45301A925DEB00158262 /* CUIApp.xcdatamodeld */,
 				4C2B452C1A925DEB00158262 /* Supporting Files */,
 				4CCD32DA1AA6DE8000DC574D /* Article.swift */,
-				61F2B6151AD2097B0086C51B /* ArticleViewController.swift */,
 				4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */,
 			);
 			path = CUIApp;
