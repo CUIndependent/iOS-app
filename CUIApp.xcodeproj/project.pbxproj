@@ -15,6 +15,7 @@
 		4C2B453C1A925DEB00158262 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2B453A1A925DEB00158262 /* LaunchScreen.xib */; };
 		4C2B45481A925DEB00158262 /* CUIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45471A925DEB00158262 /* CUIAppTests.swift */; };
 		4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */; };
+		4C964F941AD213EE005A9296 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C964F931AD213EE005A9296 /* MenuViewController.swift */; };
 		4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD32DA1AA6DE8000DC574D /* Article.swift */; };
 		61F2B6161AD2097B0086C51B /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F2B6151AD2097B0086C51B /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		4C2B45461A925DEB00158262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C2B45471A925DEB00158262 /* CUIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUIAppTests.swift; sourceTree = "<group>"; };
 		4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		4C964F931AD213EE005A9296 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4CCD32DA1AA6DE8000DC574D /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		61F2B6151AD2097B0086C51B /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,16 +87,17 @@
 		4C2B452B1A925DEB00158262 /* CUIApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CCD32DA1AA6DE8000DC574D /* Article.swift */,
 				4C2B452E1A925DEB00158262 /* AppDelegate.swift */,
-				61F2B6151AD2097B0086C51B /* ArticleViewController.swift */,
 				4C2B45331A925DEB00158262 /* ArticleFeedViewController.swift */,
-				4C2B45351A925DEB00158262 /* Main.storyboard */,
-				4C2B45381A925DEB00158262 /* Images.xcassets */,
+				61F2B6151AD2097B0086C51B /* ArticleViewController.swift */,
+				4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */,
 				4C2B453A1A925DEB00158262 /* LaunchScreen.xib */,
+				4C2B45351A925DEB00158262 /* Main.storyboard */,
+				4C964F931AD213EE005A9296 /* MenuViewController.swift */,
+				4C2B45381A925DEB00158262 /* Images.xcassets */,
 				4C2B45301A925DEB00158262 /* CUIApp.xcdatamodeld */,
 				4C2B452C1A925DEB00158262 /* Supporting Files */,
-				4CCD32DA1AA6DE8000DC574D /* Article.swift */,
-				4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */,
 			);
 			path = CUIApp;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */,
 				61F2B6161AD2097B0086C51B /* ArticleViewController.swift in Sources */,
 				4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */,
+				4C964F941AD213EE005A9296 /* MenuViewController.swift in Sources */,
 				4C2B45341A925DEB00158262 /* ArticleFeedViewController.swift in Sources */,
 				4C2B452F1A925DEB00158262 /* AppDelegate.swift in Sources */,
 				4C2B45321A925DEB00158262 /* CUIApp.xcdatamodeld in Sources */,

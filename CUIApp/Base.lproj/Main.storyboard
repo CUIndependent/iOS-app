@@ -21,6 +21,32 @@
             </objects>
             <point key="canvasLocation" x="-758" y="233"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="A4M-WF-lbF">
+            <objects>
+                <tableViewController id="Ogg-iq-9vj" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vP6-5S-vLr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="76Y-cc-9AL">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="76Y-cc-9AL" id="ruC-iq-URs">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ogg-iq-9vj" id="PiS-qY-wfc"/>
+                            <outlet property="delegate" destination="Ogg-iq-9vj" id="bly-oY-5W1"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXJ-4o-n21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="-607"/>
+        </scene>
         <!--Title-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -97,7 +123,13 @@
                             <constraint firstAttribute="trailing" secondItem="wLS-na-D7g" secondAttribute="trailing" id="nNh-VA-53w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Rze-R9-Me9"/>
+                    <navigationItem key="navigationItem" title="Title" id="Rze-R9-Me9">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="1WG-gb-KkB">
+                            <connections>
+                                <segue destination="Ogg-iq-9vj" kind="presentation" modalTransitionStyle="flipHorizontal" id="UqJ-uz-JrS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wLS-na-D7g" id="cob-zK-kmD"/>
                     </connections>

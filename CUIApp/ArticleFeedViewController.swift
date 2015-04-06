@@ -25,6 +25,15 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         navigationItem.title = "Feed"
+        
+        /*
+        if segue.identifier == "ArticleViewController"{
+            navigationItem.title = "Feed"
+        }
+        if segue.identifier == "MenuViewController"{
+            navigationItem.title = nil
+        }
+        */
     }
     
     override func viewDidLoad() {
