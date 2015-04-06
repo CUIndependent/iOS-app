@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qWT-Gk-8lC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qWT-Gk-8lC">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-758" y="233"/>
         </scene>
-        <!--Article Feed View Controller-->
+        <!--Title-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ArticleFeedViewController" customModule="CUIApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,9 +80,13 @@
                                             <outlet property="articleDateLabel" destination="FnE-Jw-nzQ" id="bHe-RH-0r6"/>
                                             <outlet property="articleImageView" destination="Ngp-Wp-7xB" id="yEs-EA-cDo"/>
                                             <outlet property="articleTitleLabel" destination="T4g-Wi-zzI" id="pmf-C4-c5T"/>
+                                            <segue destination="72j-Po-g5b" kind="custom" id="KJu-OM-YUG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="ymB-F2-8AR"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -93,14 +97,34 @@
                             <constraint firstAttribute="trailing" secondItem="wLS-na-D7g" secondAttribute="trailing" id="nNh-VA-53w"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OY2-Wh-AIS"/>
+                    <navigationItem key="navigationItem" title="Title" id="Rze-R9-Me9">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="vfu-0R-KZJ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wLS-na-D7g" id="cob-zK-kmD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="134"/>
+            <point key="canvasLocation" x="75" y="233"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rsX-g7-JK5">
+            <objects>
+                <viewController id="72j-Po-g5b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ki5-CG-9iU"/>
+                        <viewControllerLayoutGuide type="bottom" id="9XW-a3-BTv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tTQ-kO-Lv6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0e-Ei-2Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="233"/>
         </scene>
     </scenes>
 </document>

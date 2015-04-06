@@ -16,6 +16,7 @@
 		4C2B45481A925DEB00158262 /* CUIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B45471A925DEB00158262 /* CUIAppTests.swift */; };
 		4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */; };
 		4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD32DA1AA6DE8000DC574D /* Article.swift */; };
+		61F2B6161AD2097B0086C51B /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F2B6151AD2097B0086C51B /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4C2B45471A925DEB00158262 /* CUIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUIAppTests.swift; sourceTree = "<group>"; };
 		4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4CCD32DA1AA6DE8000DC574D /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		61F2B6151AD2097B0086C51B /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				4C2B45301A925DEB00158262 /* CUIApp.xcdatamodeld */,
 				4C2B452C1A925DEB00158262 /* Supporting Files */,
 				4CCD32DA1AA6DE8000DC574D /* Article.swift */,
+				61F2B6151AD2097B0086C51B /* ArticleViewController.swift */,
 				4C3A3BD91AA81923005B52ED /* CustomTableViewCell.swift */,
 			);
 			path = CUIApp;
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCD32DB1AA6DE8000DC574D /* Article.swift in Sources */,
+				61F2B6161AD2097B0086C51B /* ArticleViewController.swift in Sources */,
 				4C3A3BDA1AA81923005B52ED /* CustomTableViewCell.swift in Sources */,
 				4C2B45341A925DEB00158262 /* ArticleFeedViewController.swift in Sources */,
 				4C2B452F1A925DEB00158262 /* AppDelegate.swift in Sources */,
