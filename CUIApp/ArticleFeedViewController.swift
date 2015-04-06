@@ -19,10 +19,12 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
     // TableView on the main screen
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        navigationItem.title = "CU Independent"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        title = "CU Independent"
         
         tableView.delegate = self
         tableView.dataSource = self
