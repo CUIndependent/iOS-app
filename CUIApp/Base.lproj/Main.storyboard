@@ -129,6 +129,11 @@
                                 <segue destination="Ogg-iq-9vj" kind="presentation" modalTransitionStyle="flipHorizontal" id="UqJ-uz-JrS"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="FCQs" id="ceA-hJ-Ih3">
+                            <connections>
+                                <segue destination="Lel-nE-cvy" kind="custom" id="LKl-BH-txK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wLS-na-D7g" id="cob-zK-kmD"/>
@@ -155,6 +160,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0e-Ei-2Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="839" y="233"/>
+        </scene>
+        <!--Fcq View Controller-->
+        <scene sceneID="2MU-mX-Oc8">
+            <objects>
+                <viewController id="Lel-nE-cvy" customClass="FcqViewController" customModule="CUIApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Voi-5D-duY"/>
+                        <viewControllerLayoutGuide type="bottom" id="1jx-5j-cg5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SAz-Ju-rrp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="SAz-Ju-rrp" id="liI-4L-9BQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qsc-Jb-6Lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="1005"/>
         </scene>
     </scenes>
 </document>
