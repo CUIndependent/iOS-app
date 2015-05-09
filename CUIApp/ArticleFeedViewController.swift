@@ -75,7 +75,7 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func customCellAtIndexPath(indexPath:NSIndexPath) -> CustomTableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as CustomTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! CustomTableViewCell
         
         let row = indexPath.row
         
