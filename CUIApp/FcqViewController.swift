@@ -7,34 +7,37 @@
 //
 
 import UIKit
-import WebKit
 
-class FcqViewController: UIViewController {
-    
-    @IBOutlet var containerView: UIView! = nil
-    var webView: WKWebView?
-    
-    override func viewWillAppear(animated: Bool) {
-        navigationItem.title = "FCQs"
-    }
-    
-    override func loadView(){
-        super.loadView()
-        
-        self.webView = WKWebView()
-        self.view = self.webView
-    }
+class FcqViewController: UIViewController, UIWebViewDelegate {
+
+    @IBOutlet var webView: UIWebView!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var url = NSURL(string:"http://cufcq.com/")
-        var req = NSURLRequest(URL:url!)
-        self.webView!.loadRequest(req)
+        let url: NSURL = NSURL(string: "http://cufcq.com/")!
+        let request: NSURLRequest = NSURLRequest(URL: url)
+        webView.loadRequest(request)
+        webView.delegate = self
+    }
+    
+    func webViewDidStartLoad(webView: UIWebView)  {
+        activityIndicator.hidden = false
+        activityIndicator.startAnimating()
+    }
+    
+    func webViewDidFinishLoad(webView: UIWebView)  {
+        activityIndicator.hidden = true
+        activityIndicator.stopAnimating()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationItem.title = "FCQs"
     }
 }

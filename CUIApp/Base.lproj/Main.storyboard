@@ -83,7 +83,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="articleTitleLabel" destination="T4g-Wi-zzI" id="pmf-C4-c5T"/>
-                                            <segue destination="72j-Po-g5b" kind="custom" id="KJu-OM-YUG"/>
+                                            <segue destination="72j-Po-g5b" kind="show" identifier="viewarticle" id="KJu-OM-YUG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -108,7 +108,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="FCQs" id="ceA-hJ-Ih3">
                             <connections>
-                                <segue destination="Lel-nE-cvy" kind="custom" id="LKl-BH-txK"/>
+                                <segue destination="Lel-nE-cvy" kind="show" identifier="" id="LKl-BH-txK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -131,8 +131,29 @@
                     <view key="view" contentMode="scaleToFill" id="tTQ-kO-Lv6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQf-YQ-Fqd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="buC-Tx-gpU">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="buC-Tx-gpU" firstAttribute="centerX" secondItem="IQf-YQ-Fqd" secondAttribute="centerX" id="5JD-KN-G3V"/>
+                            <constraint firstItem="IQf-YQ-Fqd" firstAttribute="top" secondItem="tTQ-kO-Lv6" secondAttribute="top" id="6sD-FW-p68"/>
+                            <constraint firstItem="buC-Tx-gpU" firstAttribute="centerY" secondItem="IQf-YQ-Fqd" secondAttribute="centerY" id="FVf-6w-9zr"/>
+                            <constraint firstAttribute="trailing" secondItem="IQf-YQ-Fqd" secondAttribute="trailing" id="In6-6t-1nh"/>
+                            <constraint firstItem="IQf-YQ-Fqd" firstAttribute="leading" secondItem="tTQ-kO-Lv6" secondAttribute="leading" id="LbW-1i-zJd"/>
+                            <constraint firstItem="IQf-YQ-Fqd" firstAttribute="bottom" secondItem="9XW-a3-BTv" secondAttribute="top" id="ozT-lV-geY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="buC-Tx-gpU" id="rBq-qv-YaW"/>
+                        <outlet property="webView" destination="IQf-YQ-Fqd" id="RtS-cy-SP2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0e-Ei-2Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,10 +170,28 @@
                     <view key="view" contentMode="scaleToFill" id="SAz-Ju-rrp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiR-9Q-MM0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-kc-2Xr">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qiR-9Q-MM0" firstAttribute="top" secondItem="SAz-Ju-rrp" secondAttribute="top" id="faU-5m-B9X"/>
+                            <constraint firstItem="YkS-kc-2Xr" firstAttribute="centerX" secondItem="qiR-9Q-MM0" secondAttribute="centerX" id="g3J-44-gcB"/>
+                            <constraint firstItem="qiR-9Q-MM0" firstAttribute="bottom" secondItem="1jx-5j-cg5" secondAttribute="top" id="gaG-hI-6HN"/>
+                            <constraint firstAttribute="trailing" secondItem="qiR-9Q-MM0" secondAttribute="trailing" id="sxd-aX-ECR"/>
+                            <constraint firstItem="qiR-9Q-MM0" firstAttribute="leading" secondItem="SAz-Ju-rrp" secondAttribute="leading" id="ySB-83-rJf"/>
+                            <constraint firstItem="YkS-kc-2Xr" firstAttribute="centerY" secondItem="qiR-9Q-MM0" secondAttribute="centerY" id="yqP-K3-kov"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="SAz-Ju-rrp" id="liI-4L-9BQ"/>
+                        <outlet property="activityIndicator" destination="YkS-kc-2Xr" id="6J2-LQ-OmI"/>
+                        <outlet property="webView" destination="qiR-9Q-MM0" id="yGn-xb-XNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qsc-Jb-6Lg" userLabel="First Responder" sceneMemberID="firstResponder"/>

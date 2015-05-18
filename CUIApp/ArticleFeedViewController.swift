@@ -74,6 +74,13 @@ class ArticleFeedViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         navigationItem.title = "Feed"
+        
+        if segue.identifier == "viewarticle" {
+            let selectedRow = tableView.indexPathForSelectedRow()?.row
+            let article: Article = articles[selectedRow!]
+            let viewController = segue.destinationViewController as! ArticleViewController
+            viewController.article = article
+        }
     }
 
     //Memory warnings
