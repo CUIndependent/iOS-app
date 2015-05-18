@@ -9,13 +9,25 @@
 import UIKit
 
 class Article: NSObject {
-    var title: String
-    var time: String
-    var image: UIImage
+    var title: String = String()
+    var image: UIImage = UIImage()
+    var descript: String = String()
+    var link: String = String()
+    var author: String = String()
     
-    init(title: String, time: String, image: UIImage) {
+    override init(){
+        
+    }
+    
+    init(title: String, link: String) {
         self.title = title
-        self.time = time
-        self.image = image
+        self.link = link
+    }
+    
+    init(title: String, descript: String, link: String, author: String){
+        self.title = title
+        self.descript = descript
+        self.link = link
+        self.author = author
     }
 }
